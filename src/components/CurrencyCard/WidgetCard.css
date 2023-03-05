@@ -80,6 +80,7 @@
 }
 
 .widget__container {
+  padding: 0 0 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
