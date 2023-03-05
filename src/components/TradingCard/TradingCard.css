@@ -1,0 +1,95 @@
+.trading__card-bottom {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 425px;
+  background-color: #D1D4DC;
+}
+
+.trading__amount label {
+  font-weight: 500;
+  margin: 0 5px 0 0;
+}
+
+.trading__amount select {
+  border-radius: 6px;
+  padding: .25rem .1rem;
+  border: .1px solid #a8a8a8;
+  outline: none;
+}
+
+.buy_sell-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+}
+
+.buy_sell-btn button {
+  padding: .3rem .9rem;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.buy_sell-btn button:nth-child(1) {
+  background-color: #2962FF;
+}
+
+.buy_sell-btn button:nth-child(2) {
+  background-color: #F44336;
+}
+
+.view_chart button {
+  border-radius: 6px;
+  padding: .4rem .4rem;
+  border: .1px solid #a8a8a8;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  color: #000;
+  z-index: 20;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.chart_modal {
+  margin: 1rem 0 0 0;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: pop-up 0.5s ease forwards;
+  z-index: 30;
+}
+
+.chart_modal button {
+  position: absolute;
+  padding: .5rem;
+  border-radius: 50%;
+  right: -3rem;
+  top: 0rem;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
