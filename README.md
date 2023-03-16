@@ -1,4 +1,4 @@
-![wise viewer](./public//image/wv.png)
+![wise viewer](./public//images/wv.png)
 
 ## Copyright Notice
 

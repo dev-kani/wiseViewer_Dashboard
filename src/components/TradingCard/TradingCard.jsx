@@ -9,11 +9,9 @@ const TradingCard = ({ symbol }) => {
   const [amount, setAmount] = useState(10)
   const [displayChart, setDisplayChart] = useState(false)
 
-  const message = `Hence this is the viewer version of this app, this button is not functional. 
-Click the right edge button to view chart of this specific currency pair`
-
   const handleChange = (event) => {
     setAmount(event.target.value)
+    alert('Hence, this is the viewer version of this app, Please note that this feature is only available as a demo.')
   }
 
   const handleViewChart = () => {
@@ -24,12 +22,16 @@ Click the right edge button to view chart of this specific currency pair`
     setDisplayChart(false)
   }
 
+  const handleBuyAndSell = () => {
+    alert('Hence, this is the viewer version of this app, this button is not functional. To view chart, click the right edge button of the widget')
+  }
+
   return (
     <>
       <div className="trading__card-bottom">
         <div className='trading__amount'>
           <label htmlFor="amount">Amount</label>
-          <select title='This is a demo'
+          <select
             id="amount"
             value={amount}
             onChange={handleChange}
@@ -44,8 +46,8 @@ Click the right edge button to view chart of this specific currency pair`
           </select>
         </div>
         <div className='buy_sell-btn'>
-          <button title={message}>Buy</button>
-          <button title={message}>Sell</button>
+          <button onClick={handleBuyAndSell}>Buy</button>
+          <button onClick={handleBuyAndSell}>Sell</button>
         </div>
 
         <div className='view_chart'>

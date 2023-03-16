@@ -30,6 +30,7 @@ const ChartModal = ({ symbol }) => {
       // "hide_side_toolbar": false,
       // "allow_symbol_change": true,
       // "container_id": widgetRef.current.id
+      // watchlist: [],
     })
 
     // return () => {
